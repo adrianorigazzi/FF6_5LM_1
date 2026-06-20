@@ -126,24 +126,6 @@ export function LandingPage({ onSelect }: Props) {
       </div>
 
       {/* Formula footer */}
-      <div
-        style={{
-          marginTop: 48,
-          padding: '10px 20px',
-          background: 'rgba(255,255,255,0.7)',
-          borderRadius: 8,
-          fontSize: 11,
-          color: '#64748b',
-          textAlign: 'center',
-          maxWidth: 680,
-        }}
-      >
-        <strong>Formelreferenz:</strong>&ensp;
-        R(s_i, A_j) = Impact · C_j · (1 − ζ_eff) · G &ensp;|&ensp;
-        R(s_i) = Σ_j R(s_i, A_j) &ensp;|&ensp;
-        R_total = Σ_i R(s_i) &ensp;|&ensp;
-        ζ_eff = 1 − Π_k(1 − ζ_k)
-      </div>
     </div>
   );
 }

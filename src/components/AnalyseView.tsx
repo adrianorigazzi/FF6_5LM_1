@@ -943,7 +943,7 @@ export function AnalyseView({
       {selectedIds.size > 0 && (
         <SectionBox
           title="Ergebnis – Schutzzielvergleich & Szenarioabdeckung"
-          subtitle="Grenzwert = Restrisiko bei vollständigem Einsatz aller benötigten Massnahmen (Σ aus Assets, dynamisch). Stabilisierungswert = Restrisiko mit den aktuell eingesetzten Massnahmen."
+          subtitle="Restrisiko = Restrisiko bei vollständigem Einsatz aller benötigten Massnahmen (Σ aus Assets, dynamisch). Aggregierte Schutzwirkung = Restrisiko mit den aktuell eingesetzten Massnahmen."
           accent="#7c3aed"
         >
           {/* Schutzzielvergleich */}
@@ -955,10 +955,10 @@ export function AnalyseView({
               <thead>
                 <tr style={{ background: '#f1f5f9' }}>
                   <Th>Schutzziel</Th>
-                  <Th align="right">Grenzwert (Σ benötigte Massnahmen)</Th>
-                  <Th align="right">Stabilisierungswert</Th>
+                  <Th align="right">Restrisiko</Th>
+                  <Th align="right">Aggregierte Schutzwirkung</Th>
                   <Th align="center">Status</Th>
-                  <Th align="right">Differenz</Th>
+                  <Th align="right">Differenz Schutzzielerfüllung</Th>
                 </tr>
               </thead>
               <tbody>
@@ -1018,9 +1018,9 @@ export function AnalyseView({
                   <Th align="center">SE</Th>
                   <Th align="center">Gedeckt</Th>
                   <Th>Zugeordnete Massnahmen</Th>
-                  <Th align="right">ζ_eff</Th>
-                  <Th align="right">Grenzwert</Th>
-                  <Th align="right">Stabilisierungswert</Th>
+                  <Th align="right">B</Th>
+                  <Th align="right">Restrisiko</Th>
+                  <Th align="right">Aggregierte Schutzwirkung</Th>
                 </tr>
               </thead>
               <tbody>
