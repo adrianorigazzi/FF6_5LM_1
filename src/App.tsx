@@ -213,23 +213,6 @@ export default function App() {
       )}
 
       {/* Formula reference footer */}
-      <div
-        style={{
-          marginTop: 24,
-          padding: '10px 14px',
-          background: '#f1f5f9',
-          borderRadius: 8,
-          fontSize: 11,
-          color: '#475569',
-          borderLeft: '3px solid #1e3a5f',
-        }}
-      >
-        <strong>Formelreferenz:</strong>&ensp;
-        R(s_i, A_j) = Impact(s_i, A_j) · C_j · (1 − ζ) · G &ensp;|&ensp;
-        R(s_i) = Σ_j R(s_i, A_j) &ensp;|&ensp;
-        R_total = Σ_i R(s_i) &ensp;|&ensp;
-        ζ_eff = 1 − Π_k(1 − ζ_k)
-      </div>
     </div>
   );
 }
